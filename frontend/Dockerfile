@@ -11,7 +11,6 @@ COPY . .
 
 RUN npm run build
 
-# Stage 2: Serve using Nginx
 FROM nginx:stable-alpine
 
 # Copy the Vite build output
