@@ -132,7 +132,7 @@ function AppContent() {
       <header className="fade-in" style={{ marginBottom: '3rem' }}>
         <div className="header-content" style={{ flex: 1, minWidth: '300px' }}>
           <h1 style={{ margin: 0 }}>DSA Placement Mastery</h1>
-          <p className="subtitle" style={{ marginTop: '0.5rem' }}>Your ultimate premium dashboard featuring 375 handpicked standard data structures & algorithms placement problems.</p>
+          <p className="subtitle" style={{ marginTop: '0.5rem' }}>Your ultimate premium dashboard featuring carefully curated Data Structures & Algorithms placement problems designed to strengthen problem-solving skills and boost interview success.</p>
         </div>
 
         <div className="glass overall-progress-card" style={{ flex: '0 0 360px', margin: 0 }}>
