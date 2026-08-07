@@ -172,7 +172,8 @@ router.post('/forgot-password', async (req, res) => {
     const useMongo = getDbState();
     const emailLower = email.toLowerCase();
     const token = crypto.randomBytes(20).toString('hex');
-    const resetUrl = `http://localhost:5175/reset-password/${token}`;
+    const clientUrl = process.env.CLIENT_URL || 'http://localhost:5173';
+    const resetUrl = `${clientUrl}/reset-password/${token}`;
 
     if (useMongo) {
       const user = await User.findOne({ email: emailLower });
